@@ -22,6 +22,7 @@ df_all = pd.merge(df_all, df_desc, how='left', on='product_uid')
 
 stemmer = SnowballStemmer('english')
 
+df_train2 = df_all.loc[df_train.index]
 
 # s中的单词去除噪音
 def str_stemmer(s):
