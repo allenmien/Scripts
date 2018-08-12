@@ -7,7 +7,11 @@
 import logging
 import os.path
 import sys
+
 from gensim.corpora import WikiCorpus
+
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 if __name__ == '__main__':
     program = os.path.basename(sys.argv[0])
